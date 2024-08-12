@@ -1,0 +1,94 @@
+{ pkgs, ... }:
+{
+  extraPlugins = [
+    (pkgs.vimUtils.buildVimPlugin {
+      name = "tokyodark";
+      src = pkgs.fetchFromGitHub {
+        owner = "tiagovla";
+        repo = "tokyodark.nvim";
+        rev = "master";
+        hash = "sha1-z3GssgTY42pA5GT0rZVpN68B860=";
+      };
+    })
+  ];
+
+  extraConfigLua = ''
+    require("tokyodark").setup({
+      transparent_background = true,
+      gamma = 1.00,
+      styles = {
+        comments = { italic = true },
+        keywords = { italic = true, bold = true },
+        identifiers = { italic = true },
+        functions = { bold = true, italic = true },
+        variables = { bold = true },
+      },
+    })
+
+    vim.cmd([[colorscheme tokyodark]])
+  '';
+
+  colorschemes = {
+    kanagawa = {
+      enable = false;
+      settings = {
+        compile = true;
+        undercurl = true;
+        commentStyle = {
+          italic = true;
+        };
+        functionStyle = {
+          italic = true;
+          bold = true;
+        };
+        keywordStyle = {
+          italic = true;
+        };
+        statementStyle = {
+          bold = true;
+        };
+        typeStyle = {
+          italic = true;
+          bold = true;
+        };
+        transparent = true;
+        theme = "wave";
+      };
+    };
+
+    ayu = {
+      enable = false;
+      settings = {
+        mirage = true;
+      };
+    };
+
+    tokyonight = {
+      enable = false;
+    };
+
+    gruvbox = {
+      enable = false;
+      settings = {
+        terminalColors = true;
+        undercurl = true;
+        underline = true;
+        bold = true;
+        italic = {
+          strings = true;
+          emphasis = true;
+          comments = true;
+          operators = false;
+          folds = true;
+        };
+        strikethrough = true;
+        invertSelection = false;
+        invertSigns = false;
+        invertTabline = false;
+        invertIntend_guides = false;
+        inverse = true;
+      };
+    };
+
+  };
+}
