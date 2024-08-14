@@ -24,7 +24,7 @@
           }
           {
             key = "<leader>cd";
-            action = "diagnostic.open_float";
+            action = "<cmd>lua vim.diagnostic.open_float()<CR>";
             mode = [ "n" ];
             options = {
               desc = "Line diagnostics";

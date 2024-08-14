@@ -37,15 +37,6 @@
       };
     }
     {
-      mode = ["n" "v"];
-      key = "<ESC>";
-      action = "<cmd>nohlsearch<Bar><CR><cmd>echo<CR>";
-      options = {
-        noremap = true;
-        silent = true;
-      };
-    }
-    {
       mode = "n";
       key = "<C-h>";
       action = "<C-w>h";
@@ -118,7 +109,7 @@
       };
     }
     {
-      mode = ["n" "v"];
+      mode = "n";
       key = "<C-M-j>";
       action = "<cmd>resize +2<CR>";
       options = {
@@ -127,7 +118,7 @@
       };
     }
     {
-      mode = ["n" "v"];
+      mode = "n";
       key = "<C-M-h>";
       action = "<cmd>vertical resize -2<CR>";
       options = {
@@ -136,7 +127,7 @@
       };
     }
     {
-      mode = ["n" "v"];
+      mode = "v";
       key = "<C-M-l>";
       action = "<cmd>vertical resize +2<CR>";
       options = {
@@ -145,7 +136,7 @@
       };
     }
     {
-      mode = ["n" "v"];
+      mode = "v";
       key = "K";
       action = ":move '<-2<CR>gv-gv";
       options = {
@@ -154,7 +145,7 @@
       };
     }
     {
-      mode = ["n" "v"];
+      mode = "v";
       key = "J";
       action = ":move '>+1<CR>gv-gv";
       options = {

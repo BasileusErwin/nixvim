@@ -14,6 +14,7 @@
   plugins.treesitter = {
     enable = true;
     settings = {
+      ensure_installed = "all";
       auto_install = true;
       highlight = {
         enable = true;
