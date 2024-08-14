@@ -3,6 +3,5 @@
     ./ui
     ./lsp
     ./tools
-    ./languges
   ];
 }

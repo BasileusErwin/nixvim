@@ -4,9 +4,11 @@
     ./lualine.nix
     ./bufferline.nix
     ./treesitter.nix
+    ./ident.nix
     ./noice.nix
     ./notify.nix
     ./themes.nix
+    ./navic.nix
   ];
 
   extraPlugins = with pkgs.vimPlugins; [

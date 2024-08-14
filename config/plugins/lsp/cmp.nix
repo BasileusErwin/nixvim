@@ -11,32 +11,14 @@
     cmp = {
       enable = true;
       settings = {
-
         sources = [
-          {
-            name = "nvim_lsp";
-          }
-          {
-            name = "copilot";
-          }
-          {
-            name = "luasnip";
-          }
-          {
-            name = "path";
-          }
-          {
-            name = "buffer";
-          }
-          {
-            name = "git";
-          }
-          {
-            name = "cmdline";
-          }
-          {
-            name = "nvim_lua";
-          }
+          { name = "nvim_lsp"; }
+          { name = "copilot"; }
+          { name = "luasnip"; }
+          { name = "path"; }
+          { name = "nvim_lua"; }
+          { name = "buffer"; }
+          { name = "git"; }
         ];
 
         experimental = {
@@ -56,30 +38,8 @@
           "<C-e>" = "cmp.mapping.close()";
           "<C-f>" = "cmp.mapping.scroll_docs(4)";
           "<CR>" = "cmp.mapping.confirm({ select = true })";
-          "<Tab>" = ''
-            cmp.mapping(function(fallback)
-                if cmp.visible() then
-                  cmp.select_next_item()
-                else
-                  fallback()
-                end
-              end, {
-                "i",
-                "s",
-            })
-          '';
-          "<S-Tab>" = ''
-            cmp.mapping(function(fallback)
-              if cmp.visible() then
-                cmp.select_prev_item()
-              else
-                fallback()
-              end
-            end, {
-              "i",
-              "s",
-            })
-          '';
+          "<Tab>" = "cmp.mapping.select_next_item()";
+          "<S-Tab>" = "cmp.mapping.select_prev_item()";
         };
 
         formatting = {
@@ -88,7 +48,6 @@
             "kind"
             "menu"
           ];
-
         };
 
         native = {
@@ -116,22 +75,26 @@
               { name = "buffer"; }
             ];
           };
+          "*" = {
+            sources = [
+              { name = "nvim_lsp"; }
+              { name = "nvim_lua"; }
+              { name = "copilot"; }
+              { name = "buffer"; }
+            ];
+          };
           cmdline = {
             "/" = {
               mapping = {
                 __raw = "cmp.mapping.preset.cmdline()";
               };
-              sources = [
-                { name = [ "buffer" ]; }
-              ];
+              sources = [ { name = [ "buffer" ]; } ];
             };
             "?" = {
               mapping = {
                 __raw = "cmp.mapping.preset.cmdline()";
               };
-              sources = [
-                { name = [ "buffer" ]; }
-              ];
+              sources = [ { name = [ "buffer" ]; } ];
             };
             ":" = {
               mapping = {

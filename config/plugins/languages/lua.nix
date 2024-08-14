@@ -1,5 +1,12 @@
 { pkgs, ... }:
 {
+  extraPackages = [
+    pkgs.stylua
+    pkgs.selene
+    pkgs.lua-language-server
+    pkgs.lua5_4
+  ];
+
   extraPlugins = with pkgs.vimPlugins; [
     neodev-nvim
     neoconf-nvim

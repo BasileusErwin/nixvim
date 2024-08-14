@@ -4,91 +4,163 @@
       mode = "n";
       key = "<C-q>";
       action = "<CMD>q<CR>";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "v";
       key = "<";
-      action = "<cmd><gv<cr>";
+      action = "<gv";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "v";
       key = ">";
-      action = "<cmd>>gv<cr>";
+      action = ">gv";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "v";
       key = "p";
       action = "\"_dP";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "n";
       key = "<ESC>";
       action = "<cmd>nohlsearch<Bar><CR><cmd>echo<CR>";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "n";
       key = "<C-h>";
       action = "<C-w>h";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "n";
       key = "<C-j>";
       action = "<C-w>j";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "n";
       key = "<C-k>";
       action = "<C-w>k";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "n";
       key = "<C-l>";
       action = "<C-w>l";
-    }
-    {
-      mode = "n";
-      key = "<M-j>";
-      action = "10<C-e>";
-    }
-    {
-      mode = "n";
-      key = "<M-k>";
-      action = "10<C-y>";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "n";
       key = "<C-s>";
       action = "<cmd>w<CR>";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "n";
       key = "<C-S>";
       action = "<cmd>wa<CR>";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "n";
       key = "<M-q>";
       action = "<cmd>bd<CR>";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "n";
       key = "<C-M-k>";
       action = "<cmd>resize -2<CR>";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "n";
       key = "<C-M-j>";
       action = "<cmd>resize +2<CR>";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "n";
       key = "<C-M-h>";
       action = "<cmd>vertical resize -2<CR>";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
     {
       mode = "n";
       key = "<C-M-l>";
       action = "<cmd>vertical resize +2<CR>";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      mode = "x";
+      key = "K";
+      action = ":move '<-2<CR>gv-gv";
+      options = {
+        noremap = true;
+        silent = true;
+      };
+    }
+    {
+      mode = "x";
+      key = "J";
+      action = ":move '>+1<CR>gv-gv";
+      options = {
+        noremap = true;
+        silent = true;
+      };
     }
   ];
 }

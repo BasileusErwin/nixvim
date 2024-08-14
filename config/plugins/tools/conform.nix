@@ -12,38 +12,13 @@
     enable = true;
     formattersByFt = {
       # java = [ "google-java-format" ];
-      # nasm = [ "asmfmt" ];
-      # asm = [ "asmfmt" ];
-      # c = [ "clang-format" ];
-      # cpp = [ "clang-format" ];
-      # cmake = [ "cmake-format" ];
-      # make = [ "cmake-format" ];
       lua = [ "stylua" ];
-      # python = [
-      #   "isort"
-      #   "black"
-      # ];
-      # javascript = [
-      #   [
-      #     "prettierd"
-      #     "prettier"
-      #   ]
-      # ];
-      # typescript = [
-      #   [
-      #     "prettierd"
-      #     "prettier"
-      #   ]
-      # ];
-      # rust = [ "rustfmt" ];
       json = [
         [
           "prettierd"
           "jq"
         ]
       ];
-      # ocaml = [ "ocamlformat" ];
-      # zig = [ "zigfmt" ];
       bash = [ "shellcheck" ];
       markdown = [ "prettierd" ];
       ignis = [ "trim_whitespace" ];

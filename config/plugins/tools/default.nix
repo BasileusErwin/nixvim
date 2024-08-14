@@ -1,7 +1,12 @@
 {
   imports = [
+    ./autopairs.nix
+    ./comment.nix
     ./conform.nix
+    ./escape.nix
+    ./fzf-lua.nix
     ./neoscroll.nix
+    ./git.nix
     ./outline.nix
     ./oil.nix
     ./surround.nix

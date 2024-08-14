@@ -1,5 +1,6 @@
 {
   description = "My nixvim configuration";
+
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
@@ -22,7 +23,7 @@
           nixvim' = nixvim.legacyPackages.${system};
           basic = nixvim'.makeNixvimWithModule {
             inherit pkgs;
-            module = import ./config;
+            module = import ./config/basic.nix;
             extraSpecialArgs = {
               inherit inputs;
             };
@@ -36,7 +37,7 @@
           };
           personal = nixvim'.makeNixvimWithModule {
             inherit pkgs;
-            module = import ./config/personal;
+            module = import ./config;
             extraSpecialArgs = {
               inherit inputs;
             };

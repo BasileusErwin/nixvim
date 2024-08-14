@@ -1,10 +1,12 @@
 {
-  imports = [
-    ./cmp.nix
-  ];
+  imports = [ ./cmp.nix ];
 
   plugins = {
+
     nix.enable = true;
+    luasnip = {
+      enable = true;
+    };
 
     lsp = {
       enable = true;
@@ -51,6 +53,7 @@
         TypeParameter = "";
       };
     };
+
     copilot-lua = {
       enable = true;
       panel.enabled = false;
@@ -65,6 +68,18 @@
         hgcommit = false;
         svn = false;
         cvs = false;
+      };
+    };
+
+    none-ls = {
+      enable = true;
+      sources = {
+        code_actions = {
+          gitsigns.enable = true;
+          gitrebase.enable = true;
+          refactoring.enable = true;
+          gomodifytags.enable = true;
+        };
       };
     };
   };
