@@ -12,5 +12,6 @@
     ./surround.nix
     ./telescope.nix
     ./which-key.nix
+    ./hover.nix
   ];
 }
