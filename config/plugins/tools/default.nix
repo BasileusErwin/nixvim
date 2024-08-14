@@ -11,5 +11,6 @@
     ./oil.nix
     ./surround.nix
     ./telescope.nix
+    ./which-key.nix
   ];
 }

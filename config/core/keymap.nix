@@ -1,7 +1,7 @@
 {
   keymaps = [
     {
-      mode = "n";
+      mode = ["n" "v"];
       key = "<C-q>";
       action = "<CMD>q<CR>";
       options = {
@@ -37,7 +37,7 @@
       };
     }
     {
-      mode = "n";
+      mode = ["n" "v"];
       key = "<ESC>";
       action = "<cmd>nohlsearch<Bar><CR><cmd>echo<CR>";
       options = {
@@ -82,7 +82,7 @@
       };
     }
     {
-      mode = "n";
+      mode = ["n" "v"];
       key = "<C-s>";
       action = "<cmd>w<CR>";
       options = {
@@ -91,7 +91,7 @@
       };
     }
     {
-      mode = "n";
+      mode = ["n" "v"];
       key = "<C-S>";
       action = "<cmd>wa<CR>";
       options = {
@@ -100,7 +100,7 @@
       };
     }
     {
-      mode = "n";
+      mode = ["n" "v"];
       key = "<M-q>";
       action = "<cmd>bd<CR>";
       options = {
@@ -109,7 +109,7 @@
       };
     }
     {
-      mode = "n";
+      mode = ["n" "v"];
       key = "<C-M-k>";
       action = "<cmd>resize -2<CR>";
       options = {
@@ -118,7 +118,7 @@
       };
     }
     {
-      mode = "n";
+      mode = ["n" "v"];
       key = "<C-M-j>";
       action = "<cmd>resize +2<CR>";
       options = {
@@ -127,7 +127,7 @@
       };
     }
     {
-      mode = "n";
+      mode = ["n" "v"];
       key = "<C-M-h>";
       action = "<cmd>vertical resize -2<CR>";
       options = {
@@ -136,7 +136,7 @@
       };
     }
     {
-      mode = "n";
+      mode = ["n" "v"];
       key = "<C-M-l>";
       action = "<cmd>vertical resize +2<CR>";
       options = {
@@ -145,7 +145,7 @@
       };
     }
     {
-      mode = "x";
+      mode = ["n" "v"];
       key = "K";
       action = ":move '<-2<CR>gv-gv";
       options = {
@@ -154,7 +154,7 @@
       };
     }
     {
-      mode = "x";
+      mode = ["n" "v"];
       key = "J";
       action = ":move '>+1<CR>gv-gv";
       options = {

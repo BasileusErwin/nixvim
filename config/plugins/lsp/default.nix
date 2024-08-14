@@ -2,21 +2,101 @@
   imports = [ ./cmp.nix ];
 
   plugins = {
-
     nix.enable = true;
-    luasnip = {
-      enable = true;
-    };
+    fidget.enable = true;
+    luasnip.enable = true;
 
     lsp = {
       enable = true;
-      keymaps.lspBuf = {
-        K = "hover";
-        gD = "references";
-        gd = "definition";
-        gi = "implementation";
-        gT = "type_definition";
-        "<leader>vrn" = "rename";
+      keymaps = {
+        extra = [
+          {
+
+            key = "<leader>ca";
+            action = "code_action";
+            mode = [
+              "n"
+              "v"
+            ];
+            options = {
+              desc = "Code actions";
+            };
+          }
+          {
+            key = "<leader>cd";
+            action = "diagnostic.open_float";
+            mode = [ "n" ];
+            options = {
+              desc = "Line diagnostics";
+            };
+          }
+          {
+            key = "<leader>ci";
+            action = "LspInfo";
+            mode = [ "n" ];
+            options = {
+              desc = "Lsp info";
+            };
+          }
+          {
+            key = "<leader>cr";
+            action = "vim.lsp.buf.rename";
+            mode = [ "n" ];
+            options = {
+              desc = "Rename";
+            };
+          }
+
+          {
+            key = "<leader>dD";
+            action = "<cmd>lua vim.diagnostic.goto_next()<CR>";
+            options = {
+              desc = "Next diagnostic";
+            };
+          }
+          {
+            key = "<leader>dE";
+            action = "<cmd>lua vim.diagnostic.goto_next({severity = vim.diagnostic.severity.ERROR})<CR>";
+            options = {
+              desc = "Next Error";
+            };
+          }
+          {
+            key = "<leader>dW";
+            action = "<cmd>lua vim.diagnostic.goto_next({severity = vim.diagnostic.severity.WARN})<CR>";
+            options = {
+              desc = "Next Warning";
+            };
+          }
+          {
+            key = "<leader>dd";
+            action = "<cmd>lua vim.diagnostic.goto_prev()<CR>";
+            options = {
+              desc = "Previous Diagnostic";
+            };
+          }
+          {
+            key = "<leader>de";
+            action = "<cmd>lua vim.diagnostic.goto_prev({severity = vim.diagnostic.severity.ERROR})<CR>";
+            options = {
+              desc = "Previous Error";
+            };
+          }
+          {
+            key = "<leader>dw";
+            action = "<cmd>lua vim.diagnostic.goto_prev({severity = vim.diagnostic.severity.WARN})<CR>";
+            options = {
+              desc = "Previous Warning";
+            };
+          }
+        ];
+        lspBuf = {
+          K = "hover";
+          gD = "references";
+          gd = "definition";
+          gi = "implementation";
+          gT = "type_definition";
+        };
       };
       inlayHints = true;
     };

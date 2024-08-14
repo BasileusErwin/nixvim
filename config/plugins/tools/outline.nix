@@ -1,8 +1,6 @@
 { pkgs, ... }:
 {
-  extraPlugins = with pkgs.vimPlugins; [
-    outline-nvim
-  ];
+  extraPlugins = with pkgs.vimPlugins; [ outline-nvim ];
   extraConfigLua = ''
     require('outline').setup({
       position = "left",
@@ -16,6 +14,9 @@
       mode = "n";
       key = "<leader>o";
       action = "<cmd>lua require('outline').toggle()<cr>";
+      options = {
+        desc = "Toggle outline";
+      };
     }
   ];
 }

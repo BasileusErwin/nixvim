@@ -19,6 +19,9 @@
       mode = "n";
       key = "<leader>e";
       action = "<cmd>Oil --float<CR>";
+      options = {
+        desc = "Open file explorer";
+      };
     }
   ];
 }

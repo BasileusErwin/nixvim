@@ -9,5 +9,24 @@
         current_line_blame = true;
       };
     };
+
+    neogit = {
+      enable = true;
+      settings.integrations.diffview = true;
+    };
+    diffview.enable = true;
   };
+
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>Gg";
+      options = {
+        desc = "Open Neogit";
+        silent = true;
+        nowait = true;
+      };
+      action = "<cmd>Neogit<cr>";
+    }
+  ];
 }

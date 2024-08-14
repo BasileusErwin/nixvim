@@ -9,5 +9,6 @@
     ./plugins/languages/python.nix
     ./plugins/languages/zig.nix
     ./plugins/languages/python.nix
+    ./plugins/languages/docker.nix
   ];
 }

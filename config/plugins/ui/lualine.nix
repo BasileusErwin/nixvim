@@ -6,7 +6,7 @@
     iconsEnabled = true;
     alwaysDivideMiddle = true;
     extensions = [ ];
-		tabline = {};
+    tabline = { };
     componentSeparators = {
       left = "";
       right = "";

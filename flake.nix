@@ -30,7 +30,7 @@
           };
           work = nixvim'.makeNixvimWithModule {
             inherit pkgs;
-            module = import ./config;
+            module = import ./config/work.nix;
             extraSpecialArgs = {
               inherit inputs;
             };

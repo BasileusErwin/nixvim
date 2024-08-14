@@ -6,5 +6,6 @@
     ./plugins/languages/markdown.nix
     ./plugins/languages/lua.nix
     ./plugins/languages/serializables.nix
+    ./plugins/languages/shell.nix
   ];
 }

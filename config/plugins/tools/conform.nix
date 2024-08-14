@@ -19,7 +19,6 @@
           "jq"
         ]
       ];
-      bash = [ "shellcheck" ];
       markdown = [ "prettierd" ];
       ignis = [ "trim_whitespace" ];
       nix = [ "nixfmt" ];
@@ -32,6 +31,9 @@
       mode = "n";
       key = "<leader>cf";
       action = "<cmd>lua require('conform').format({ async = true, lsp_fallback = true })<CR>";
+      options = {
+        desc = "Format code";
+      };
     }
   ];
 }
