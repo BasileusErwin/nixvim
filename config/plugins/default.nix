@@ -4,4 +4,6 @@
     ./lsp
     ./tools
   ];
+
+  performance.byteCompileLua.enable= true;
 }

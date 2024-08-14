@@ -6,12 +6,14 @@
         ion = "ion";
       };
     };
+
     globals = {
       mapleader = " ";
       maplocalleader = " ";
       norule = false;
       closetag_filetypes = "html,xhtml,phtml,xml,javascript,typescript,javascriptreact,typescriptreact";
     };
+
     opts = {
       number = true;
       relativenumber = true;
@@ -51,5 +53,6 @@
       shortmess = "filnxtToOFWIcC";
       filetype = "on";
     };
+
   };
 }
