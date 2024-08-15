@@ -1,9 +1,13 @@
 {
   plugins.toggleterm = {
     enable = true;
-
-    settings = {
-      open_mapping = "[[<leader>t]]";
-    };
   };
+
+  keymaps = [
+    {
+      mode = "n";
+      key = "<leader>t";
+      action = "<cmd>ToggleTerm<cr>";
+    }
+  ];
 }
