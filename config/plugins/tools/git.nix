@@ -20,7 +20,7 @@
   keymaps = [
     {
       mode = "n";
-      key = "<leader>Gg";
+      key = "<leader>g";
       options = {
         desc = "Open Neogit";
         silent = true;
