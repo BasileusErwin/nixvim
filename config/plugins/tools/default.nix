@@ -13,5 +13,6 @@
     ./telescope.nix
     ./which-key.nix
     ./hover.nix
+    ./terminal.nix
   ];
 }

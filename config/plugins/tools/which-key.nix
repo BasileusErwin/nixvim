@@ -6,11 +6,11 @@
       spec = [
         {
           __unkeyed-1 = "<leader>b";
-          group = "󰓩 Buffers";
+          group = "Buffers";
         }
         {
           __unkeyed-1 = "<leader>G";
-          group = "󰊢 Git";
+          group = "Git";
         }
         {
           __unkeyed-1 = "<leader>d";
@@ -23,6 +23,10 @@
         {
           __unkeyed-1 = "<leader>c";
           group = "Code";
+        }
+        {
+          __unkeyed-1 = "<leader>t";
+          group = "Terminal";
         }
       ];
     };
