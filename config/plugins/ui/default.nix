@@ -4,7 +4,7 @@
     ./lualine.nix
     ./bufferline.nix
     ./treesitter.nix
-    ./ident.nix
+    ./indent.nix
     ./noice.nix
     ./notify.nix
     ./themes.nix
