@@ -91,10 +91,10 @@
           }
         ];
         lspBuf = {
-          gD = "references";
+          gr = "references";
           gd = "definition";
           gi = "implementation";
-          gT = "type_definition";
+          gt = "type_definition";
         };
       };
       inlayHints = true;
@@ -115,7 +115,7 @@
         Interface = "";
         Module = "";
         Property = "ﰠ";
-        Unit = "塞";
+        Unit = "";
         Value = "";
         Enum = "";
         Keyword = "";
