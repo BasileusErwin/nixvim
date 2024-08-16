@@ -5,6 +5,25 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
     flake-parts.url = "github:hercules-ci/flake-parts";
+
+    # Custom plugins
+
+    plugin-treesitter = {
+      url = "github:BasileusErwin/nvim-treesitter";
+      flake = false;
+    };
+    plugin-surround = {
+      url = "github:ur4ltz/surround.nvim";
+      flake = false;
+    };
+    plugin-hover = {
+      url = "github:lewis6991/hover.nvim";
+      flake = false;
+    };
+    plugin-tokyodark = {
+      url = "github:tiagovla/tokyodark.nvim";
+      flake = false;
+    };
   };
 
   outputs =

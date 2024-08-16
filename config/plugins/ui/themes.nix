@@ -1,14 +1,9 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   extraPlugins = [
     (pkgs.vimUtils.buildVimPlugin {
       name = "tokyodark";
-      src = pkgs.fetchFromGitHub {
-        owner = "tiagovla";
-        repo = "tokyodark.nvim";
-        rev = "master";
-        hash = "sha1-z3GssgTY42pA5GT0rZVpN68B860=";
-      };
+      src = inputs.plugin-tokyodark;
     })
   ];
 

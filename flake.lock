@@ -278,11 +278,79 @@
         "type": "github"
       }
     },
+    "plugin-hover": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1718202500,
+        "narHash": "sha256-Q1k4ddyMlPSp2rX5CjxS70JJmRDbBHCowlu2CTuq0No=",
+        "owner": "lewis6991",
+        "repo": "hover.nvim",
+        "rev": "4339cbbcb572b1934c53dcb66ad4bf6a0abb7918",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lewis6991",
+        "repo": "hover.nvim",
+        "type": "github"
+      }
+    },
+    "plugin-surround": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1665378293,
+        "narHash": "sha256-3A5KxgG54Gnp/anPYn+hkYzI4y5mV8qwu/MB/lIaWy4=",
+        "owner": "ur4ltz",
+        "repo": "surround.nvim",
+        "rev": "36c253d6470910692491b13382f54c9bab2811e1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ur4ltz",
+        "repo": "surround.nvim",
+        "type": "github"
+      }
+    },
+    "plugin-tokyodark": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1717611113,
+        "narHash": "sha256-c5D+Lj7lSF1cAcmKECJy2wA9woStBE1ARrY2y48MMDw=",
+        "owner": "tiagovla",
+        "repo": "tokyodark.nvim",
+        "rev": "14bc1b3e596878a10647af7c82de7736300f3322",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tiagovla",
+        "repo": "tokyodark.nvim",
+        "type": "github"
+      }
+    },
+    "plugin-treesitter": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1723589432,
+        "narHash": "sha256-VgrXsVUK8aSve8IlKp3hmgwbK3emLCVfcF2kAXXKm/o=",
+        "owner": "BasileusErwin",
+        "repo": "nvim-treesitter",
+        "rev": "f5b88495504c138404cb7453a0c2f4f7a18e0a52",
+        "type": "github"
+      },
+      "original": {
+        "owner": "BasileusErwin",
+        "repo": "nvim-treesitter",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flake-parts": "flake-parts",
         "nixpkgs": "nixpkgs",
-        "nixvim": "nixvim"
+        "nixvim": "nixvim",
+        "plugin-hover": "plugin-hover",
+        "plugin-surround": "plugin-surround",
+        "plugin-tokyodark": "plugin-tokyodark",
+        "plugin-treesitter": "plugin-treesitter"
       }
     },
     "systems": {

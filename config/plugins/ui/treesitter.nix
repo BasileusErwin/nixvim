@@ -1,14 +1,7 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   extraPlugins = [
-    (pkgs.vimPlugins.nvim-treesitter.overrideAttrs {
-      src = pkgs.fetchFromGitHub {
-        owner = "BasileusErwin";
-        repo = "nvim-treesitter";
-        rev = "master";
-        hash = "sha1-r//XdM2Wk2SlWnQaBrU13xXGIJQ=";
-      };
-    })
+    (pkgs.vimPlugins.nvim-treesitter.overrideAttrs { src = inputs.plugin-treesitter; })
   ];
 
   plugins.treesitter = {

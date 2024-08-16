@@ -1,14 +1,9 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   extraPlugins = [
     (pkgs.vimUtils.buildVimPlugin {
       name = "surround.nvim";
-      src = pkgs.fetchFromGitHub {
-        owner = "ur4ltz";
-        repo = "surround.nvim";
-        rev = "master";
-        hash = "sha1-myGU4khrq6h1E8JEr8fEb/zlmpI=";
-      };
+      src = inputs.plugin-surround;
     })
   ];
 

@@ -1,14 +1,9 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   extraPlugins = [
     (pkgs.vimUtils.buildVimPlugin {
       name = "hover";
-      src = pkgs.fetchFromGitHub {
-        owner = "lewis6991";
-        repo = "hover.nvim";
-        rev = "main";
-        hash = "sha1-Ea4L/vN3HXMy4BC0EOZl28/Mdfc=";
-      };
+      src = inputs.plugin-hover;
     })
   ];
 
