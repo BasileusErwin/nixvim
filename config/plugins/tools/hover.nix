@@ -1,11 +1,6 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
-  extraPlugins = [
-    (pkgs.vimUtils.buildVimPlugin {
-      name = "hover";
-      src = inputs.plugin-hover;
-    })
-  ];
+  extraPlugins = [ pkgs.vimPlugins.hover-nvim ];
 
   extraConfigLua = ''
     local status_hover, hover = pcall(require, 'hover')

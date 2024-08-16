@@ -278,22 +278,6 @@
         "type": "github"
       }
     },
-    "plugin-hover": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1718202500,
-        "narHash": "sha256-Q1k4ddyMlPSp2rX5CjxS70JJmRDbBHCowlu2CTuq0No=",
-        "owner": "lewis6991",
-        "repo": "hover.nvim",
-        "rev": "4339cbbcb572b1934c53dcb66ad4bf6a0abb7918",
-        "type": "github"
-      },
-      "original": {
-        "owner": "lewis6991",
-        "repo": "hover.nvim",
-        "type": "github"
-      }
-    },
     "plugin-surround": {
       "flake": false,
       "locked": {
@@ -347,7 +331,6 @@
         "flake-parts": "flake-parts",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
-        "plugin-hover": "plugin-hover",
         "plugin-surround": "plugin-surround",
         "plugin-tokyodark": "plugin-tokyodark",
         "plugin-treesitter": "plugin-treesitter"

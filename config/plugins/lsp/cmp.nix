@@ -18,7 +18,6 @@
           { name = "copilot"; }
           { name = "luasnip"; }
           { name = "path"; }
-          { name = "nvim_lua"; }
           { name = "buffer"; }
           { name = "git"; }
         ];

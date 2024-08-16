@@ -15,10 +15,6 @@
       url = "github:ur4ltz/surround.nvim";
       flake = false;
     };
-    plugin-hover = {
-      url = "github:lewis6991/hover.nvim";
-      flake = false;
-    };
     plugin-tokyodark = {
       url = "github:tiagovla/tokyodark.nvim";
       flake = false;

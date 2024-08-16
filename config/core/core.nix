@@ -9,6 +9,7 @@
     };
 
     globals = {
+      editorconfig = true;
       mapleader = " ";
       maplocalleader = " ";
       norule = false;
@@ -44,7 +45,6 @@
       splitright = true;
       autowrite = true;
       list = true;
-      listchars = "tab:\\ ,trail:-";
       laststatus = 3;
       cmdheight = 1;
       updatetime = 50;

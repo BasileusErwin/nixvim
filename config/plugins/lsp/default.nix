@@ -1,5 +1,25 @@
+{ pkgs, ... }:
 {
   imports = [ ./cmp.nix ];
+
+  extraPlugins = [
+    pkgs.vimPlugins.lsp_signature-nvim
+    # (pkgs.vimUtils.buildVimPlugin {
+    #   name = "lsp_signature";
+    #   src = inputs.plugin-lspsignature;
+    # })
+  ];
+
+  extraConfigLua = ''
+    require('lsp_signature').setup({
+      bind = true,
+      max_height = 10,
+      max_width = 70,
+      noice = true,
+      wrap = true,
+      floating_window = true,
+    })
+  '';
 
   plugins = {
     nix.enable = true;
