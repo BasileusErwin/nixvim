@@ -4,6 +4,7 @@
       extension = {
         ign = "ignis";
         ion = "ion";
+        http = "http";
       };
     };
 

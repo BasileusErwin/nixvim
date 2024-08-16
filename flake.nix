@@ -7,7 +7,6 @@
     flake-parts.url = "github:hercules-ci/flake-parts";
 
     # Custom plugins
-
     plugin-treesitter = {
       url = "github:BasileusErwin/nvim-treesitter";
       flake = false;

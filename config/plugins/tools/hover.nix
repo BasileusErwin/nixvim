@@ -26,16 +26,29 @@
         preview_window = true,
         title = true,
       })
-
-      vim.keymap.set("n", "K", require("hover").hover, { desc = "hover.nvim" })
-      vim.keymap.set("n", "gK", require("hover").hover_select, { desc = "hover.nvim (select)" })
-
-      vim.keymap.set("n", "<C-p>", function()
-        require("hover").hover_switch("previous")
-      end, { desc = "hover.nvim (previous source)" })
-      vim.keymap.set("n", "<C-n>", function()
-        require("hover").hover_switch("next")
-      end, { desc = "hover.nvim (next source)" })
     end
   '';
+
+  keymaps = [
+    {
+      mode = "n";
+      key = "K";
+      action = "<cmd>lua require('hover').hover()<CR>";
+    }
+    {
+      mode = "n";
+      key = "gK";
+      action = "<cmd>lua require('hover').hover_select()<CR>";
+    }
+    {
+      mode = "n";
+      key = "<C-p>";
+      action = "<cmd>lua require('hover').hover_switch('previous')<CR>";
+    }
+    {
+      mode = "n";
+      key = "<C-n>";
+      action = "<cmd>lua require('hover').hover_switch('next')<CR>";
+    }
+  ];
 }
