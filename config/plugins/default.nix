@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   imports = [
     ./ui
@@ -5,5 +6,8 @@
     ./tools
   ];
 
-  performance.byteCompileLua.enable= true;
+  performance.byteCompileLua.enable = true;
+  editorconfig.enable = true;
+  luaLoader.enable = true;
+  extraPlugins = [ pkgs.vimPlugins.plenary-nvim ];
 }

@@ -9,7 +9,6 @@
     };
 
     globals = {
-      editorconfig = true;
       mapleader = " ";
       maplocalleader = " ";
       norule = false;
