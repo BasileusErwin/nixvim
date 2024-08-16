@@ -13,13 +13,14 @@
           {
 
             key = "<leader>ca";
-            action = "code_action";
+            action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
             mode = [
               "n"
               "v"
             ];
             options = {
               desc = "Code actions";
+              silent = true;
             };
           }
           {
@@ -40,7 +41,7 @@
           }
           {
             key = "<leader>cr";
-            action = "vim.lsp.buf.rename";
+            action = "<cmd>lua vim.lsp.buf.rename()<cr>";
             mode = [ "n" ];
             options = {
               desc = "Rename";
