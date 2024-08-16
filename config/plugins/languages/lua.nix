@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   extraPackages = [
     pkgs.stylua
@@ -7,19 +7,19 @@
     pkgs.lua5_4
   ];
 
-  extraPlugins = [
-    pkgs.vimPlugins.neoconf-nvim
-    pkgs.vimPlugins.lazydev-nvim
+  extraPlugins = with pkgs.vimPlugins; [
+    neodev-nvim
+    neoconf-nvim
   ];
 
   extraConfigLuaPre = ''
     require('neoconf').setup()
-    require('lazydev').setup()
+    require('neodev').setup()
   '';
 
   plugins = {
     lsp.servers.lua-ls.enable = true;
-    cmp.settings.sources = [ { name = "lazydev"; } ];
+    cmp.settings.sources = [ { name = "nvim_lua"; groupIndex = 0; } ];
     none-ls.sources = {
       formatting.stylua.enable = true;
       diagnostics.selene.enable = true;

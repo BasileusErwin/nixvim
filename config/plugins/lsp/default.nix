@@ -33,7 +33,7 @@
           {
 
             key = "<leader>ca";
-            action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
+            action = "<cmd>FzfLua code_actions<CR>";
             mode = [
               "n"
               "v"
@@ -49,14 +49,6 @@
             mode = [ "n" ];
             options = {
               desc = "Line diagnostics";
-            };
-          }
-          {
-            key = "<leader>ci";
-            action = "LspInfo";
-            mode = [ "n" ];
-            options = {
-              desc = "Lsp info";
             };
           }
           {
