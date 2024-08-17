@@ -4,10 +4,6 @@
 
   extraPlugins = [
     pkgs.vimPlugins.lsp_signature-nvim
-    # (pkgs.vimUtils.buildVimPlugin {
-    #   name = "lsp_signature";
-    #   src = inputs.plugin-lspsignature;
-    # })
   ];
 
   extraConfigLua = ''
@@ -33,7 +29,7 @@
           {
 
             key = "<leader>ca";
-            action = "<cmd>FzfLua code_actions<CR>";
+            action = "<cmd>FzfLua lsp_code_actions<CR>";
             mode = [
               "n"
               "v"
