@@ -14,5 +14,6 @@
     ./which-key.nix
     ./hover.nix
     ./terminal.nix
+    ./glow.nix
   ];
 }
