@@ -7,6 +7,26 @@
       enable = true;
       settings = {
         current_line_blame = true;
+        sings = {
+          add = {
+            text = " ";
+          };
+          change = {
+            text = " ";
+          };
+          delete = {
+            text = " ";
+          };
+          untracked = {
+            text = "";
+          };
+          topdelete = {
+            text = "󱂥 ";
+          };
+          changedelete = {
+            text = "󱂧 ";
+          };
+        };
       };
     };
 
