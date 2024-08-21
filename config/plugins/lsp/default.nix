@@ -142,23 +142,6 @@
       };
     };
 
-    copilot-lua = {
-      enable = true;
-      panel.enabled = false;
-      suggestion.enabled = false;
-      filetypes = {
-        "." = true;
-        yaml = true;
-        markdown = true;
-        help = false;
-        gitcommit = true;
-        gitrebase = false;
-        hgcommit = false;
-        svn = false;
-        cvs = false;
-      };
-    };
-
     none-ls = {
       enable = true;
       sources = {

@@ -9,6 +9,7 @@
     ./notify.nix
     ./themes.nix
     ./navic.nix
+    ./nui.nix
   ];
 
   extraPlugins = with pkgs.vimPlugins; [

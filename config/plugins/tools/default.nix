@@ -1,5 +1,6 @@
 {
   imports = [
+    ./ai.nix
     ./autopairs.nix
     ./comment.nix
     ./conform.nix

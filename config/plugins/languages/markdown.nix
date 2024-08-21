@@ -1,4 +1,18 @@
+{ pkgs, inputs, ... }:
 {
+  extraPlugins = [
+    (pkgs.vimUtils.buildVimPlugin {
+      name = "render-markdown";
+      src = inputs.plugin-render-markdown;
+    })
+  ];
+
+  extraConfigLua = ''
+    require("render-markdown").setup({
+      file_types = { "markdown", "Avante" },
+    })
+  '';
+
   plugins = {
     lsp.servers.ltex = {
       enable = true;

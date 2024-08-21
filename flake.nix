@@ -19,6 +19,23 @@
       url = "github:tiagovla/tokyodark.nvim";
       flake = false;
     };
+    plugin-avante = {
+      url = "github:yetone/avante.nvim";
+      flake = false;
+    };
+    plugin-render-markdown = {
+      url = "github:MeanderingProgrammer/render-markdown.nvim";
+      flake = false;
+    };
+
+    plugin-nui-components = {
+      url = "github:grapp-dev/nui-components.nvim";
+      flake = false;
+    };
+    plugin-nui = {
+      url = "github:MunifTanjim/nui.nvim";
+      flake = false;
+    };
   };
 
   outputs =
