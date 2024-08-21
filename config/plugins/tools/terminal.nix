@@ -3,7 +3,7 @@
     enable = true;
 
     settings = {
-      winbar.enabled = true;
+      winbar.enabled = false;
       size = 20;
     };
   };

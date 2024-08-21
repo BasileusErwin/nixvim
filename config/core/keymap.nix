@@ -91,7 +91,7 @@
       };
     }
     {
-      mode = ["n" "v"];
+      mode = ["n" "v" "t"];
       key = "<M-q>";
       action = "<cmd>bd<CR>";
       options = {
