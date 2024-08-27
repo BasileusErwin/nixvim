@@ -294,6 +294,22 @@
         "type": "github"
       }
     },
+    "plugin-kulala": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1724357567,
+        "narHash": "sha256-lsct1/VGj0rtX3xzoSKQD7Rji7zsNrWSsHyZr1fdU44=",
+        "owner": "mistweaverco",
+        "repo": "kulala.nvim",
+        "rev": "7649576ca459146658b4c415d1a320bbedc3f564",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mistweaverco",
+        "repo": "kulala.nvim",
+        "type": "github"
+      }
+    },
     "plugin-nui": {
       "flake": false,
       "locked": {
@@ -396,6 +412,7 @@
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
         "plugin-avante": "plugin-avante",
+        "plugin-kulala": "plugin-kulala",
         "plugin-nui": "plugin-nui",
         "plugin-nui-components": "plugin-nui-components",
         "plugin-render-markdown": "plugin-render-markdown",

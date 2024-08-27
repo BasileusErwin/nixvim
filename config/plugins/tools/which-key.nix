@@ -28,6 +28,10 @@
           __unkeyed-1 = "<leader>t";
           group = "Terminal";
         }
+        {
+          __unkeyed-1 = "<leader>r";
+          group = "Request";
+        }
       ];
     };
   };

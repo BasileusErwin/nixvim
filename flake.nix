@@ -36,6 +36,10 @@
       url = "github:MunifTanjim/nui.nvim";
       flake = false;
     };
+    plugin-kulala = {
+      url = "github:mistweaverco/kulala.nvim";
+      flake = false;
+    };
   };
 
   outputs =

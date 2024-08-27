@@ -16,5 +16,6 @@
     ./hover.nix
     ./terminal.nix
     ./glow.nix
+    ./request.nix
   ];
 }

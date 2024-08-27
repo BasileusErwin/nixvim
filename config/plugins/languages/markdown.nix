@@ -7,9 +7,16 @@
     })
   ];
 
+  extraPackages = [
+    pkgs.python312Packages.pylatexenc
+  ];
+
   extraConfigLua = ''
     require("render-markdown").setup({
       file_types = { "markdown", "Avante" },
+      latex = {
+        enabled = false,
+      },
     })
   '';
 
