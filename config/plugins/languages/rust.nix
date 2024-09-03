@@ -1,11 +1,17 @@
-{pkgs, ...}:{
+{ pkgs, ... }:
+{
   extraPackages = [
     pkgs.rust-analyzer
     pkgs.rustfmt
   ];
 
   plugins = {
-    rustaceanvim.enable = true;
+    rust-tools.enable = true;
+    lsp.servers.rust-analyzer = {
+      enable = true;
+      installCargo = true;
+      installRustc = false;
+    };
 
     conform-nvim = {
       enable = true;
@@ -15,5 +21,4 @@
       };
     };
   };
-
 }

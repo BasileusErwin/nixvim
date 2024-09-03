@@ -27,7 +27,6 @@
       keymaps = {
         extra = [
           {
-
             key = "<leader>ca";
             action = "<cmd>FzfLua lsp_code_actions<CR>";
             mode = [

@@ -4,10 +4,10 @@
     pkgs.prettierd
     pkgs.eslint_d
   ];
+
   plugins = {
     lsp.servers = {
       tsserver.enable = true;
-      eslint.enable = true;
     };
 
     conform-nvim = {

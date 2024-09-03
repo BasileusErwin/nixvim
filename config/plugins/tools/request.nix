@@ -83,6 +83,14 @@
         desc = "Toggle view";
       };
     }
+    {
+      mode = "n";
+      key = "<leader>re";
+      action = "<cmd>lua require('kulala').set_selected_env()<cr>";
+      options = {
+        desc = "Set selected environment";
+      };
+    }
   ];
 
   keymaps = [
