@@ -6,7 +6,9 @@
 
     barbecue = {
       enable = true;
-      createAutocmd = false;
+      settings ={
+        create_autocmd = false;
+      };
     };
   };
 

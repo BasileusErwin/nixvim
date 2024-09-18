@@ -1,12 +1,14 @@
 {
   plugins.bufferline = {
     enable = true;
-    numbers = "none";
-    diagnostics = "nvim_lsp";
-    showTabIndicators = true;
-    showBufferCloseIcons = false;
-    showCloseIcon = false;
-    colorIcons = true;
+    settings.options = {
+      numbers = "none";
+      diagnostics = "nvim_lsp";
+      show_tab_indicators = true;
+      show_buffer_close_icons = false;
+      show_close_icon = false;
+      color_icons = true;
+    };
   };
 
   keymaps = [
