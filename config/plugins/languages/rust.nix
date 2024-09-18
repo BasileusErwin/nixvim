@@ -15,7 +15,7 @@
 
     conform-nvim = {
       enable = true;
-      formattersByFt = {
+      settings.formatters_by_ft = {
         rust = [ "rustfmt" ];
         toml = [ "rustfmt" ];
       };

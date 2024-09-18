@@ -4,7 +4,7 @@
 
     conform-nvim = {
       enable = true;
-      formattersByFt.zig = [ "zigfmt" ];
+      settings.formatters_by_ft.zig = [ "zigfmt" ];
     };
   };
 }

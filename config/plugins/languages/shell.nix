@@ -11,7 +11,7 @@
 
     conform-nvim = {
       enable = true;
-      formattersByFt.bash = [ "shellcheck" ];
+      settings.formatters_by_ft.bash = [ "shellcheck" ];
     };
   };
 }

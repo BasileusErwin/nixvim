@@ -4,7 +4,7 @@
 
     conform-nvim = {
       enable = true;
-      formattersByFt.ocaml = [ "ocamlformat" ];
+      settings.formatters_by_ft.ocaml = [ "ocamlformat" ];
     };
   };
 }

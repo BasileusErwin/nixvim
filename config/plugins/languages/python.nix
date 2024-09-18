@@ -6,7 +6,7 @@
 
     conform-nvim = {
       enable = true;
-      formattersByFt.python = [
+      settings.formatters_by_ft.python = [
         "isort"
         "black"
       ];

@@ -17,7 +17,7 @@
     conform-nvim = {
       enable = true;
 
-      formattersByFt = {
+      settings.formatters_by_ft = {
         nasm = [ "asmfmt" ];
         asm = [ "asmfmt" ];
         c = [ "clang-format" ];
