@@ -7,7 +7,7 @@
 
   plugins = {
     lsp.servers = {
-      tsserver.enable = true;
+      ts_ls.enable = true;
     };
 
     conform-nvim = {

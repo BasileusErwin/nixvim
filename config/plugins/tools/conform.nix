@@ -20,9 +20,17 @@
         ]
       ];
       markdown = [ "prettierd" ];
-      ignis = [ "trim_whitespace" ];
+      ignis = [
+        "squeeze_blanks"
+        "trim_whitespace"
+        "trim_newlines"
+      ];
       nix = [ "nixfmt" ];
-      "_" = [ "trim_whitespace" ];
+      "_" = [
+        "squeeze_blanks"
+        "trim_whitespace"
+        "trim_newlines"
+      ];
     };
   };
 

@@ -15,12 +15,12 @@
     {
       mode = ["n" "v"];
       key = "<M-k>";
-      action = "<cmd>lua require('neoscroll').scroll(-vim.wo.scroll, true, 10)<CR>";
+      action = "<cmd>lua require('neoscroll').scroll(-vim.wo.scroll, {move_cursor=true, duration=10})<CR>";
     }
     {
       mode = ["n" "v"];
       key = "<M-j>";
-      action = "<cmd>lua require('neoscroll').scroll(vim.wo.scroll, true, 10)<CR>";
+      action = "<cmd>lua require('neoscroll').scroll(vim.wo.scroll, {move_cursor=true, duration=10})<CR>";
     }
     {
       mode = ["n" "v"];
