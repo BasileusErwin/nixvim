@@ -8,13 +8,15 @@
 
   extraConfigLua = ''
     require('lsp_signature').setup({
-      bind = true,
-      max_height = 10,
-      max_width = 70,
-      noice = true,
-      wrap = true,
-      floating_window = true,
+      bind = true;
+      max_height = 10;
+      max_width = 70;
+      noice = true;
+      wrap = true;
+      floating_window = true;
     })
+
+    vim.api.nvim_set_hl(0, "CmpItemKindSupermaven", {fg ="#6CC644"})
   '';
 
   plugins = {
@@ -113,31 +115,43 @@
       cmp.enable = true;
       preset = "codicons";
       symbolMap = {
-        Text = "";
-        Method = "";
-        Function = "";
-        Constructor = "";
-        Field = "ﰠ";
-        Variable = "";
-        Class = "ﴯ";
-        Interface = "";
-        Module = "";
-        Property = "ﰠ";
-        Unit = "";
-        Value = "";
-        Enum = "";
-        Keyword = "";
-        Snippet = "﬌";
-        Color = "";
-        File = "";
-        Reference = "";
-        Folder = "";
-        EnumMember = "";
-        Constant = "";
-        Struct = "פּ";
-        Event = "";
-        Operator = "";
-        TypeParameter = "";
+        Supermaven = " ";
+        Copilot = " ";
+        Array = "󰅪 ";
+        Boolean = " ";
+        Class = " ";
+        Color = " ";
+        Constant = " ";
+        Constructor = " ";
+        Enum = " ";
+        EnumMember = " ";
+        Event = "";
+        Field = " ";
+        File = " ";
+        Folder = " ";
+        Function = "󰘧";
+        Interface = " ";
+        Key = "󰌆 ";
+        Keyword = "󰌆 ";
+        Method = " ";
+        Module = " ";
+        Namespace = "󰅩 ";
+        Null = " ";
+        Number = " ";
+        Object = " ";
+        Operator = " ";
+        Package = " ";
+        Property = " ";
+        Reference = " ";
+        Snippet = " ";
+        String = " ";
+        Struct = " ";
+        Text = "󰦨 ";
+        TypeParameter = " ";
+        Unit = "";
+        Value = "󰎠 ";
+        Variable = "󰫧 ";
+        Macro = "󰅪 ";
       };
     };
 

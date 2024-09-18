@@ -1,16 +1,11 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 {
   extraPlugins = [
-    (pkgs.vimUtils.buildVimPlugin {
-      name = "avante";
-      src = inputs.plugin-avante;
-    })
+    pkgs.vimPlugins.supermaven-nvim
   ];
 
   extraConfigLua = ''
-    require('avante').setup({
-      provider = "copilot",
-    })
+    require("supermaven-nvim").setup({})
   '';
 
   plugins = {
@@ -20,7 +15,7 @@
     };
 
     copilot-lua = {
-      enable = true;
+      enable = false;
       panel.enabled = false;
       suggestion.enabled = false;
       filetypes = {
@@ -35,6 +30,5 @@
         cvs = false;
       };
     };
-
   };
 }

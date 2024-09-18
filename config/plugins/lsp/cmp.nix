@@ -8,14 +8,15 @@
     cmp-git.enable = true;
     cmp-nvim-lsp-signature-help.enable = true;
     cmp-treesitter.enable = true;
-    copilot-cmp.enable = true;
+    copilot-cmp.enable = false;
 
     cmp = {
       enable = true;
       settings = {
         sources = [
           { name = "nvim_lsp"; }
-          { name = "copilot"; }
+          { name = "supermaven"; }
+          # { name = "copilot"; }
           { name = "luasnip"; }
           { name = "path"; }
           { name = "buffer"; }
@@ -81,7 +82,8 @@
           "*" = {
             sources = [
               { name = "nvim_lsp"; }
-              { name = "copilot"; }
+              #{ name = "copilot"; }
+              { name = "supermaven"; }
               { name = "nvim_lua"; }
               { name = "buffer"; }
             ];

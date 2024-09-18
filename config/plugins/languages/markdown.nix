@@ -13,7 +13,7 @@
 
   extraConfigLua = ''
     require("render-markdown").setup({
-      file_types = { "markdown", "Avante" },
+      file_types = { "markdown" },
       latex = {
         enabled = false,
       },
