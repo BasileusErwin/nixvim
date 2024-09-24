@@ -18,5 +18,6 @@
     ./glow.nix
     ./request.nix
     ./dap.nix
+    ./database.nix
   ];
 }
