@@ -1,5 +1,5 @@
 {
-  plugins.todo-comment = {
+  plugins.todo-comments = {
     enable = true;
     settings = {
       colors = {
