@@ -17,6 +17,10 @@
           group = "Diagnostic";
         }
         {
+          __unkeyed-1 = "<leader>D";
+          group = "Debug";
+        }
+        {
           __unkeyed-1 = "<leader>f";
           group = "Find";
         }

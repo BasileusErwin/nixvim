@@ -10,6 +10,7 @@
     ./themes.nix
     ./navic.nix
     ./nui.nix
+    ./todo-comments.nix
   ];
 
   extraPlugins = with pkgs.vimPlugins; [

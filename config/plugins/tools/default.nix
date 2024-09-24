@@ -17,5 +17,6 @@
     ./terminal.nix
     ./glow.nix
     ./request.nix
+    ./dap.nix
   ];
 }

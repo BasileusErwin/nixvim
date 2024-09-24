@@ -14,5 +14,10 @@
       key = "<leader>t";
       action = "<cmd>ToggleTerm<cr>";
     }
+    {
+      mode = "x";
+      key = "<M-q>";
+      action = "<cmd>q!<cr>";
+    }
   ];
 }

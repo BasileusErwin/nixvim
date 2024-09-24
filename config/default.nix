@@ -10,5 +10,6 @@
     ./plugins/languages/zig.nix
     ./plugins/languages/python.nix
     ./plugins/languages/docker.nix
+    ./plugins/languages/java.nix
   ];
 }

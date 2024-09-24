@@ -20,6 +20,7 @@
         lualine_a = [
           {
             __unkeyed-1 = "mode";
+            icon = " ";
             upper = true;
           }
         ];
@@ -33,9 +34,9 @@
             colored = true;
             always_visible = true;
             symbols = {
-              added = " ";
-              modified = " ";
-              removed = " ";
+              added = " ";
+              modified = " ";
+              removed = " ";
             };
           }
         ];
@@ -51,6 +52,8 @@
             symbols = {
               error = " ";
               warn = " ";
+              info = " ";
+              hint = " ";
             };
             colored = true;
             update_in_insert = true;
