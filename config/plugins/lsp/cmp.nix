@@ -17,7 +17,6 @@
         sources = [
           { name = "nvim_lsp"; }
           { name = "supermaven"; }
-          # { name = "copilot"; }
           { name = "luasnip"; }
           { name = "path"; }
           { name = "buffer"; }
@@ -74,18 +73,15 @@
         };
 
         filetype = {
-          gitcommit = {
+          sql = {
             sources = [
-              { name = "cmp_git"; }
+              { name = "vim-dadbod-completion"; }
               { name = "buffer"; }
             ];
           };
-          "*" = {
+          gitcommit = {
             sources = [
-              { name = "nvim_lsp"; }
-              #{ name = "copilot"; }
-              { name = "supermaven"; }
-              { name = "nvim_lua"; }
+              { name = "cmp_git"; }
               { name = "buffer"; }
             ];
           };
@@ -116,11 +112,8 @@
               };
             };
           };
-
         };
-
       };
-
     };
   };
 }

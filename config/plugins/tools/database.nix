@@ -20,7 +20,7 @@
     db_ui_show_database_icon = 1;
     db_ui_force_echo_notifications = 1;
     db_ui_win_position = "left";
-    db_ui_winwidth = 120;
+    db_ui_winwidth = 80;
   };
 
   keymaps = [
