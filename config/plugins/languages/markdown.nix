@@ -30,6 +30,11 @@
             rendered = "",
             highlight = "RenderMarkdownError",
           },
+          waiting = {
+            raw = "[@]",
+            rendered = "󰥔 ",
+            highlight = "RenderMarkdownInfo",
+          },
         },
       },
     })
