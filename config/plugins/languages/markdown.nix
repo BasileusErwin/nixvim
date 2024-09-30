@@ -17,6 +17,21 @@
       latex = {
         enabled = false,
       },
+      checkbox = {
+        enabled = true,
+        custom = {
+          started = {
+            raw = "[>]",
+            rendered = "",
+            highlight = "RenderMarkdownTableHead",
+          },
+          deleted = {
+            raw = "[~]",
+            rendered = "",
+            highlight = "RenderMarkdownError",
+          },
+        },
+      },
     })
   '';
 
