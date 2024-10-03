@@ -21,4 +21,9 @@
     ./database.nix
     ./taskwarrior.nix
   ];
+
+  plugins = {
+    hex.enable = true;
+    hardtime.enable = true;
+  };
 }

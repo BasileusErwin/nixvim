@@ -38,6 +38,9 @@
 
     octo = {
       enable = true;
+      settings = {
+        default_remote = [ "github" ];
+      };
     };
   };
 
