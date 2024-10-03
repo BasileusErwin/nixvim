@@ -35,6 +35,10 @@
       settings.integrations.diffview = true;
     };
     diffview.enable = true;
+
+    octo = {
+      enable = true;
+    };
   };
 
   keymaps = [
