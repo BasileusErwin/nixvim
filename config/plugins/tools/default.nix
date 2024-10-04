@@ -24,6 +24,5 @@
 
   plugins = {
     hex.enable = true;
-    hardtime.enable = true;
   };
 }
