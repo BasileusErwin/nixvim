@@ -40,6 +40,10 @@
       url = "github:mistweaverco/kulala.nvim";
       flake = false;
     };
+    plugin-taskwarrior = {
+      url = "github:huantrinh1802/m_taskwarrior_d.nvim";
+      flake = false;
+    };
   };
 
   outputs =
