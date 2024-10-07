@@ -39,7 +39,10 @@
     octo = {
       enable = true;
       settings = {
-        default_remote = [ "github" ];
+        picker = "fzf-lua";
+        ssh_aliases = {
+          "github-work" = "github.com";
+        };
       };
     };
   };
