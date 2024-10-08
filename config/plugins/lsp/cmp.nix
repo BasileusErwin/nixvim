@@ -25,7 +25,7 @@
 
         experimental = {
           ghostText = true;
-          nativeMenu = false;
+          nativeMenu = true;
         };
 
         snippet.expand = ''
@@ -48,8 +48,8 @@
 
         formatting = {
           fields = [
-            "abbr"
             "kind"
+            "abbr"
             "menu"
           ];
         };
@@ -68,8 +68,11 @@
         };
 
         window = {
-          completion.border = "rounded";
-          documentation.border = "rounded";
+          completion = {
+            winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None";
+            col_offset = -3;
+            side_padding = 0;
+          };
         };
 
         filetype = {

@@ -114,6 +114,7 @@
       enable = true;
       cmp.enable = true;
       preset = "codicons";
+      mode = "symbol_text";
       symbolMap = {
         Supermaven = " ";
         Copilot = " ";
