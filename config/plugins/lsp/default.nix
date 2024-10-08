@@ -1,4 +1,45 @@
 { pkgs, ... }:
+let
+  kinds = {
+    Supermaven = " ";
+    Copilot = " ";
+    Array = "󰕤 ";
+    Boolean = " ";
+    Class = " ";
+    Color = " ";
+    Constant = " ";
+    Constructor = " ";
+    Enum = " ";
+    EnumMember = " ";
+    Event = "󱐋";
+    Field = " ";
+    File = " ";
+    Folder = " ";
+    Function = "󰘧";
+    Interface = " ";
+    Key = " ";
+    Keyword = " ";
+    Method = " ";
+    Module = " ";
+    Namespace = " ";
+    Null = "󰟢";
+    Number = " ";
+    Object = " ";
+    Operator = " ";
+    Package = " ";
+    Property = "󱕴";
+    Reference = " ";
+    Snippet = " ";
+    String = "󰅳 ";
+    Struct = " ";
+    Text = "󰦪";
+    TypeParameter = "󰡱 ";
+    Unit = " ";
+    Value = " ";
+    Variable = "󰫧 ";
+    Macro = "󱃖 ";
+  };
+in
 {
   imports = [ ./cmp.nix ];
 
@@ -112,48 +153,22 @@
 
     lspkind = {
       enable = true;
-      cmp.enable = true;
-      preset = "codicons";
       mode = "symbol_text";
-      symbolMap = {
-        Supermaven = " ";
-        Copilot = " ";
-        Array = "󰅪 ";
-        Boolean = " ";
-        Class = " ";
-        Color = " ";
-        Constant = " ";
-        Constructor = " ";
-        Enum = " ";
-        EnumMember = " ";
-        Event = "";
-        Field = " ";
-        File = " ";
-        Folder = " ";
-        Function = "󰘧";
-        Interface = " ";
-        Key = "󰌆 ";
-        Keyword = "󰌆 ";
-        Method = " ";
-        Module = " ";
-        Namespace = "󰅩 ";
-        Null = " ";
-        Number = " ";
-        Object = " ";
-        Operator = " ";
-        Package = " ";
-        Property = " ";
-        Reference = " ";
-        Snippet = " ";
-        String = " ";
-        Struct = " ";
-        Text = "󰦨 ";
-        TypeParameter = " ";
-        Unit = "";
-        Value = "󰎠 ";
-        Variable = "󰫧 ";
-        Macro = "󰅪 ";
+      cmp = {
+        enable = true;
+        after = ''
+          function(entry, vim_item, kind)
+            local strings = vim.split(kind.kind, "%s", { trimempty = true })
+            kind.kind = strings[1] or ""
+
+            kind.menu = "⌈" .. (strings[2] or strings[3] or "") .. "⌋"
+
+            return kind
+          end
+        '';
       };
+      preset = "codicons";
+      symbolMap = kinds;
     };
 
     none-ls = {
