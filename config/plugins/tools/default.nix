@@ -19,7 +19,6 @@
     #./request.nix
     ./dap.nix
     ./database.nix
-    ./taskwarrior.nix
   ];
 
   plugins = {
