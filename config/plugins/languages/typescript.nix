@@ -1,13 +1,15 @@
 { pkgs, ... }:
 {
-  extraPackages = [
-    pkgs.prettierd
-    pkgs.eslint_d
+  extraPackages = with pkgs; [
+    prettierd
+    eslint_d
+    biome
   ];
 
   plugins = {
     lsp.servers = {
-      ts-ls.enable = true;
+      ts_ls.enable = true;
+      biome.enable = true;
     };
 
     conform-nvim = {
@@ -15,12 +17,14 @@
       settings.formatters_by_ft = {
         javascript = [
           [
+            "biome"
             "prettierd"
             "prettier"
           ]
         ];
         typescript = [
           [
+            "biome"
             "prettierd"
             "prettier"
           ]

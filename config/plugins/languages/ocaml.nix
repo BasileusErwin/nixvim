@@ -1,6 +1,9 @@
 {
+  # TODO: install ocamllsp from opam
   plugins = {
-    lsp.servers.ocamllsp.enable = true;
+    lsp.servers.ocamllsp = {
+      enable = false;
+    };
 
     conform-nvim = {
       enable = true;

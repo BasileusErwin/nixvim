@@ -49,12 +49,12 @@ in
 
   extraConfigLua = ''
     require('lsp_signature').setup({
-      bind = true;
-      max_height = 10;
-      max_width = 70;
-      noice = true;
-      wrap = true;
-      floating_window = true;
+      bind = true,
+      max_height = 10,
+      max_width = 70,
+      noice = true,
+      wrap = true,
+      floating_window = true,
     })
 
     vim.api.nvim_set_hl(0, "CmpItemKindSupermaven", {fg ="#6CC644"})

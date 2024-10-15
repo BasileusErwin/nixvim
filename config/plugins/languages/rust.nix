@@ -8,7 +8,7 @@
 
   plugins = {
     rust-tools.enable = true;
-    lsp.servers.rust-analyzer = {
+    lsp.servers.rust_analyzer = {
       enable = true;
       installCargo = true;
       installRustc = false;

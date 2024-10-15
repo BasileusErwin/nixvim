@@ -1,3 +1,3 @@
-{pkgs,...}: {
-  plugins.lsp.servers.java-language-server.enable = true;
+{
+  plugins.lsp.servers.java_language_server.enable = true;
 }
