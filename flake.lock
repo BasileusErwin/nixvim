@@ -243,11 +243,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1728829992,
-        "narHash": "sha256-722PdOQ4uTTAOyS3Ze4H7LXDNVi9FecKbLEvj3Qu0hM=",
+        "lastModified": 1728985146,
+        "narHash": "sha256-Kopqg/ZYUxle3wNruPmISv7uU/iMJQ4/wEqx4rGG4xA=",
         "owner": "nix-community",
         "repo": "nixvim",
-        "rev": "619e24366e8ad34230d65a323d26ca981bfa6927",
+        "rev": "25b8d2ab20fbc4a291e83a490382d503c999ab3a",
         "type": "github"
       },
       "original": {
@@ -275,22 +275,6 @@
       "original": {
         "owner": "NuschtOS",
         "repo": "search",
-        "type": "github"
-      }
-    },
-    "plugin-avante": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1728908111,
-        "narHash": "sha256-1rrig+4AbGq2LyjRvkOAg/7ld3PBN7iq42pUm4Ao+64=",
-        "owner": "yetone",
-        "repo": "avante.nvim",
-        "rev": "b19573cb2a8e30662e2245c3bfbb6e22d09d0905",
-        "type": "github"
-      },
-      "original": {
-        "owner": "yetone",
-        "repo": "avante.nvim",
         "type": "github"
       }
     },
@@ -374,22 +358,6 @@
         "type": "github"
       }
     },
-    "plugin-taskwarrior": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1727833159,
-        "narHash": "sha256-hP8D716O2JiUv/tPPQCBNc1jZw6/dLuqYvXeCYhzK7Q=",
-        "owner": "huantrinh1802",
-        "repo": "m_taskwarrior_d.nvim",
-        "rev": "d0cf7a7e882e308ab203d9973ce3147a328258f7",
-        "type": "github"
-      },
-      "original": {
-        "owner": "huantrinh1802",
-        "repo": "m_taskwarrior_d.nvim",
-        "type": "github"
-      }
-    },
     "plugin-tokyodark": {
       "flake": false,
       "locked": {
@@ -427,13 +395,11 @@
         "flake-parts": "flake-parts",
         "nixpkgs": "nixpkgs",
         "nixvim": "nixvim",
-        "plugin-avante": "plugin-avante",
         "plugin-kulala": "plugin-kulala",
         "plugin-nui": "plugin-nui",
         "plugin-nui-components": "plugin-nui-components",
         "plugin-render-markdown": "plugin-render-markdown",
         "plugin-surround": "plugin-surround",
-        "plugin-taskwarrior": "plugin-taskwarrior",
         "plugin-tokyodark": "plugin-tokyodark",
         "plugin-treesitter": "plugin-treesitter"
       }

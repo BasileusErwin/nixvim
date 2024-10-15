@@ -5,8 +5,7 @@
   ];
 
   extraConfigLua = ''
-    require("supermaven-nvim").setup({
-    })
+    require("supermaven-nvim").setup({ })
   '';
 
   plugins = {

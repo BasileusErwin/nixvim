@@ -19,10 +19,6 @@
       url = "github:tiagovla/tokyodark.nvim";
       flake = false;
     };
-    plugin-avante = {
-      url = "github:yetone/avante.nvim";
-      flake = false;
-    };
     plugin-render-markdown = {
       url = "github:MeanderingProgrammer/render-markdown.nvim";
       flake = false;
@@ -38,10 +34,6 @@
     };
     plugin-kulala = {
       url = "github:mistweaverco/kulala.nvim";
-      flake = false;
-    };
-    plugin-taskwarrior = {
-      url = "github:huantrinh1802/m_taskwarrior_d.nvim";
       flake = false;
     };
   };

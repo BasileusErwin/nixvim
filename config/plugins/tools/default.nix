@@ -16,7 +16,7 @@
     ./hover.nix
     ./terminal.nix
     ./glow.nix
-    #./request.nix
+    ./request.nix
     ./dap.nix
     ./database.nix
   ];
