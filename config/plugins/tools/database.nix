@@ -11,7 +11,6 @@
     sqlite
     mariadb
     postgresql
-    mysql
     redis
   ];
 
