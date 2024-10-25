@@ -25,7 +25,7 @@
 
   colorschemes = {
     kanagawa = {
-      enable = false;
+      enable = true;
       settings = {
         compile = true;
         undercurl = true;
@@ -52,7 +52,7 @@
     };
 
     ayu = {
-      enable = true;
+      enable = false;
       settings = {
         mirage = true;
       };
