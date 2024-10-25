@@ -19,9 +19,9 @@
         variables = { bold = true },
       },
     })
-
-    vim.cmd([[colorscheme tokyodark]])
   '';
+
+  plugins.transparent.enable = true;
 
   colorschemes = {
     kanagawa = {
@@ -47,12 +47,12 @@
           bold = true;
         };
         transparent = true;
-        theme = "wave";
+        theme = "lotus";
       };
     };
 
     ayu = {
-      enable = false;
+      enable = true;
       settings = {
         mirage = true;
       };

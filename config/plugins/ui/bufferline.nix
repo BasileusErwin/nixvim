@@ -1,6 +1,6 @@
 {
   plugins.bufferline = {
-    enable = true;
+    enable = false;
     settings.options = {
       numbers = "none";
       diagnostics = "nvim_lsp";
@@ -11,16 +11,16 @@
     };
   };
 
-  keymaps = [
-    {
-      mode = "n";
-      key = "<Tab>";
-      action = "<cmd>BufferLineCycleNext<CR>";
-    }
-    {
-      mode = "n";
-      key = "<S-Tab>";
-      action = "<cmd>BufferLineCyclePrev<CR>";
-    }
-  ];
+  # keymaps = [
+  #   {
+  #     mode = "n";
+  #     key = "<Tab>";
+  #     action = "<cmd>BufferLineCycleNext<CR>";
+  #   }
+  #   {
+  #     mode = "n";
+  #     key = "<S-Tab>";
+  #     action = "<cmd>BufferLineCyclePrev<CR>";
+  #   }
+  # ];
 }
