@@ -6,7 +6,7 @@
       spec = [
         {
           __unkeyed-1 = "<leader>b";
-          group = "Database";
+          group = "Buffer";
         }
         {
           __unkeyed-1 = "<leader>G";

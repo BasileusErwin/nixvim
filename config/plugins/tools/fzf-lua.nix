@@ -1,10 +1,11 @@
 { pkgs, ... }:
 {
-  extraPackages = [
-    pkgs.fzf
-    pkgs.ripgrep
-    pkgs.fd
+  extraPackages = with pkgs; [
+    fzf
+    ripgrep
+    fd
   ];
+
   plugins.fzf-lua = {
     enable = true;
     settings = {
@@ -22,10 +23,9 @@
     };
 
     keymaps = {
-      "<leader>fb" = {
+      "<leader>b" = {
         action = "buffers";
         options = {
-          desc = "Find in buffer";
           nowait = false;
           remap = false;
           silent = true;
