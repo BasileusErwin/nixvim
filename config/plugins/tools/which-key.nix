@@ -9,7 +9,7 @@
           group = "Buffer";
         }
         {
-          __unkeyed-1 = "<leader>G";
+          __unkeyed-1 = "<leader>g";
           group = "Git";
         }
         {
