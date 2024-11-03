@@ -7,12 +7,7 @@
   ];
 
   plugins = {
-    rust-tools.enable = true;
-    lsp.servers.rust_analyzer = {
-      enable = true;
-      installCargo = true;
-      installRustc = false;
-    };
+    rustaceanvim.enable = true;
 
     conform-nvim = {
       enable = true;
