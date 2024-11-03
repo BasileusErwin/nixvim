@@ -26,7 +26,7 @@
 
         experimental = {
           ghostText = true;
-          nativeMenu = true;
+          #nativeMenu = true;
         };
 
         snippet.expand = ''
@@ -87,8 +87,8 @@
         window = {
           completion = {
             winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None";
-            col_offset = -3;
-            side_padding = 0;
+            #col_offset = -3;
+            #side_padding = 0;
           };
         };
 
