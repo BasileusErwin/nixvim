@@ -11,5 +11,6 @@
     ./plugins/languages/python.nix
     ./plugins/languages/docker.nix
     ./plugins/languages/java.nix
+    ./plugins/languages/crystal.nix
   ];
 }

@@ -1,9 +1,10 @@
 { pkgs, ... }:
 {
-  extraPackages = [
-    pkgs.bash
-    pkgs.git
-    pkgs.shellcheck
+  extraPackages = with pkgs; [
+    bash
+    git
+    shellcheck
+    shfmt
   ];
 
   plugins = {
@@ -11,7 +12,11 @@
 
     conform-nvim = {
       enable = true;
-      settings.formatters_by_ft.bash = [ "shellcheck" ];
+      settings.formatters_by_ft = {
+        bash = [ "shfmt" ];
+        sh = [ "shfmt" ];
+        shell = [ "shfmt" ];
+      };
     };
   };
 }
