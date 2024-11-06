@@ -1,8 +1,14 @@
+{ pkgs, ... }:
 {
-  # TODO: install ocamllsp from opam
+  extraPackages = with pkgs; [
+    ocamlPackages.ocamlformat
+    ocamlPackages.merlin
+  ];
+
   plugins = {
     lsp.servers.ocamllsp = {
-      enable = false;
+      enable = true;
+      package = pkgs.ocamlPackages.ocaml-lsp;
     };
 
     conform-nvim = {
