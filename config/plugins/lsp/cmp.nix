@@ -1,5 +1,58 @@
-{ helpers, ... }:
+{ pkgs, helpers, ... }:
+let
+  kinds = {
+    Supermaven = " ";
+    Copilot = " ";
+    Array = "󰕤 ";
+    Boolean = " ";
+    Class = " ";
+    Color = " ";
+    Constant = " ";
+    Constructor = " ";
+    Enum = " ";
+    EnumMember = " ";
+    Event = "󱐋";
+    Field = " ";
+    File = " ";
+    Folder = " ";
+    Function = "󰘧";
+    Interface = " ";
+    Key = " ";
+    Keyword = " ";
+    Method = " ";
+    Module = " ";
+    Namespace = " ";
+    Null = "󰟢";
+    Number = " ";
+    Object = " ";
+    Operator = " ";
+    Package = " ";
+    Property = "󱕴";
+    Reference = " ";
+    Snippet = " ";
+    String = "󰅳 ";
+    Struct = " ";
+    Text = "󰦪";
+    TypeParameter = "󰡱 ";
+    Unit = " ";
+    Value = " ";
+    Variable = "󰫧 ";
+    Macro = "󱃖 ";
+  };
+in
 {
+  extraPlugins = with pkgs.vimPlugins; [
+    lspkind-nvim
+  ];
+
+  extraConfigLua = ''
+    require('lspkind').init({
+      mode = "symbol_text",
+      maxwidth = 50,
+      symbol_map = kinds,
+    })
+  '';
+
   plugins = {
     cmp-buffer.enable = true;
     cmp-async-path.enable = true;
@@ -26,7 +79,7 @@
 
         experimental = {
           ghostText = true;
-          #nativeMenu = true;
+          nativeMenu = true;
         };
 
         snippet.expand = ''
@@ -63,12 +116,32 @@
           "<C-k>" = "cmp.mapping.select_prev_item()";
         };
 
+        window = {
+          completion = {
+            winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None";
+            col_offset = -3;
+            side_padding = 0;
+          };
+        };
+
         formatting = {
           fields = [
             "kind"
             "abbr"
             "menu"
           ];
+          format = helpers.mkRaw ''
+            function(entry, vim_item)
+              local kind = require("lspkind").cmp_format({ mode = "symbol_text", maxwidth = 50, symbol_map = kinds })(entry, vim_item);
+
+              local strings = vim.split(kind.kind, "%s", { trimempty = true })
+
+              kind.kind = " " .. (strings[1] or "") .. " "
+              kind.menu = "⌈" .. (strings[2] or "") .. "⌋"
+
+              return kind
+            end
+          '';
         };
 
         native = {
@@ -82,14 +155,6 @@
             "╰"
             "│"
           ];
-        };
-
-        window = {
-          completion = {
-            winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None";
-            #col_offset = -3;
-            #side_padding = 0;
-          };
         };
 
         filetype = {
