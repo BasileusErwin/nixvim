@@ -11,6 +11,15 @@
       url = "github:BasileusErwin/nvim-treesitter";
       flake = false;
     };
+    tree-sitter-ignis = {
+      url = "github:Ignis-lang/tree-sitter-ignis";
+      flake = false;
+    };
+    tree-sitter-ion = {
+      url = "github:Ignis-lang/tree-sitter-ion";
+      flake = false;
+    };
+
     plugin-surround = {
       url = "github:ur4ltz/surround.nvim";
       flake = false;
