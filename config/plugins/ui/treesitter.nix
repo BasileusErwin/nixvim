@@ -58,18 +58,18 @@ in
     };
   };
 
-  # extraConfigLua = ''
-  #   do
-  #   local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
-  #
-  #   parser_config["ignis"] = {
-  #     install_info = {
-  #       url = "${treesitter-ignis-grammar}",
-  #       files = { "src/parser.c" },
-  #       branch = "main",
-  #     },
-  #     filetype = { "Ignis", "ignis", "ign" },
-  #   }
-  #   end
-  # '';
+  extraConfigLua = ''
+    do
+    local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+
+    parser_config["ignis"] = {
+      install_info = {
+        url = "${treesitter-ignis-grammar}",
+        files = { "src/parser.c" },
+        branch = "main",
+      },
+      filetype = { "Ignis", "ignis", "ign" },
+    }
+    end
+  '';
 }
