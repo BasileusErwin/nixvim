@@ -2,7 +2,7 @@
 let
   treesitter-ignis-grammar = pkgs.tree-sitter.buildGrammar {
     language = "ignis";
-    version = "0.1.0";
+    version = "0.2.0";
     src = inputs.tree-sitter-ignis;
   };
   treesitter-ion-grammar = pkgs.tree-sitter.buildGrammar {
@@ -12,17 +12,24 @@ let
   };
 in
 {
-  extraPlugins = with pkgs.vimPlugins; [
-    (nvim-treesitter.overrideAttrs { src = inputs.plugin-treesitter; })
-    playground
-  ];
+  extraPlugins =
+    with pkgs.vimPlugins;
+    [
+      playground
+    ]
+    ++ [
+      treesitter-ignis-grammar
+      treesitter-ion-grammar
+    ];
 
   plugins.treesitter = {
     enable = true;
+    nixGrammars = true;
     grammarPackages = pkgs.vimPlugins.nvim-treesitter.passthru.allGrammars ++ [
       treesitter-ignis-grammar
       treesitter-ion-grammar
     ];
+    folding = true;
     settings = {
       ensure_installed = "all";
       auto_install = true;
@@ -60,16 +67,24 @@ in
 
   extraConfigLua = ''
     do
-    local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
+      local parser_config = require("nvim-treesitter.parsers").get_parser_configs()
 
-    parser_config["ignis"] = {
-      install_info = {
-        url = "${treesitter-ignis-grammar}",
-        files = { "src/parser.c" },
-        branch = "main",
-      },
-      filetype = { "Ignis", "ignis", "ign" },
-    }
+      parser_config.ignis = {
+        install_info = {
+          url = "https://github.com/Ignis-lang/tree-sitter-ignis.git",
+          files = { "src/parser.c" },
+          branch = "main",
+        },
+        filetype = { "Ignis", "ignis", "ign" },
+      }
+
+      parser_config.ion = {
+        install_info = {
+          url = "https://github.com/Ignis-lang/tree-sitter-ion.git",
+          files = { "src/parser.c" },
+        },
+        filetype = { "ion", "Ion" },
+      }
     end
   '';
 }
