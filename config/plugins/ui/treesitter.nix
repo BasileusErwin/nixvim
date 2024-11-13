@@ -29,7 +29,6 @@ in
       treesitter-ignis-grammar
       treesitter-ion-grammar
     ];
-    folding = true;
     settings = {
       ensure_installed = "all";
       auto_install = true;
