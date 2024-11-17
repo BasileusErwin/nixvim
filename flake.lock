@@ -453,11 +453,11 @@
     "tree-sitter-ignis": {
       "flake": false,
       "locked": {
-        "lastModified": 1731838786,
-        "narHash": "sha256-ThK+74EetYKiKDarjtmGtwuEQ397EL3ZKsu6uP7eCQk=",
+        "lastModified": 1731876556,
+        "narHash": "sha256-5guKaW84UfJsyA/HomjWl3ofy7AOl+47iDZtiNGCLvA=",
         "owner": "Ignis-lang",
         "repo": "tree-sitter-ignis",
-        "rev": "faa5d04274a10bfeeb05b3dfef0a2f3116e1bc10",
+        "rev": "656c721d5bc9725e3f779c57d2328c0b3e5f0b1b",
         "type": "github"
       },
       "original": {
