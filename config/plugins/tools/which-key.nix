@@ -33,7 +33,7 @@
           group = "Compile";
         }
         {
-          __unkeyed-1 = "<leader>t";
+          __unkeyed-1 = "<M-t>";
           group = "Terminal";
         }
         {

@@ -10,12 +10,12 @@
 
   keymaps = [
     {
-      mode = "n";
-      key = "<leader>t";
+      mode = ["n" "t"];
+      key = "<M-t>";
       action = "<cmd>ToggleTerm<cr>";
     }
     {
-      mode = "x";
+      mode = ["n" "t"];
       key = "<M-q>";
       action = "<cmd>q!<cr>";
     }
