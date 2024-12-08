@@ -11,7 +11,6 @@
   plugins.conform-nvim = {
     enable = true;
     settings.formatters_by_ft = {
-      # java = [ "google-java-format" ];
       lua = [ "stylua" ];
       json = [
         [

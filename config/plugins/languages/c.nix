@@ -77,7 +77,6 @@
     };
 
     dap = {
-      enable = true;
       adapters.executables.gdb = {
         command = "gdb";
         args = [

@@ -18,7 +18,6 @@
     };
 
     dap = {
-      enable = true;
       adapters.executables.lldb = {
         command = "lldb";
       };

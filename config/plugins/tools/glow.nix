@@ -1,6 +1,6 @@
 {
   plugins.glow = {
-    enable = true;
+    enable = false;
     settings = {
       border = "single";
       style = "dark";

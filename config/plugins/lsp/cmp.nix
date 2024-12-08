@@ -62,7 +62,6 @@ in
     cmp-git.enable = true;
     cmp-nvim-lsp-signature-help.enable = true;
     cmp-treesitter.enable = true;
-    cmp-dap.enable = true;
     copilot-cmp.enable = false;
 
     cmp = {

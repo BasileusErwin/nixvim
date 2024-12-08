@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   extraPlugins = with pkgs.vimPlugins; [ outline-nvim ];
+
   extraConfigLua = ''
     require('outline').setup({
       position = "left",
@@ -9,6 +10,7 @@
       },
     })
   '';
+
   keymaps = [
     {
       mode = "n";

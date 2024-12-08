@@ -10,7 +10,7 @@
           name = "Ignis";
         };
         ion = {
-          icon = "";
+          icon = "󰈸";
           color = "#702963";
           name = "Ion";
         };
